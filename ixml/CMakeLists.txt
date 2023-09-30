@@ -69,7 +69,8 @@ if (UPNP_BUILD_SHARED)
 	)
 endif()
 
-if (UPNP_BUILD_STATIC)
+#if (UPNP_BUILD_STATIC)
+	message("UPNP_BUILD_STATIC ixml_static")
 	add_library (ixml_static STATIC
 		${IXML_SOURCES}
 	)
@@ -116,7 +117,7 @@ if (UPNP_BUILD_STATIC)
 		RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 			COMPONENT UPNP_RunTime
 	)
-endif()
+#endif()
 
 install (EXPORT IXML
 	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/IXML

@@ -168,7 +168,8 @@ if (UPNP_BUILD_SHARED)
 	)
 endif()
 
-if (UPNP_BUILD_STATIC)
+#if (UPNP_BUILD_STATIC)
+	message("UPNP_BUILD_STATIC upnp_static")
 	add_library (upnp_static STATIC
 		${UPNP_SOURCES}
 	)
@@ -225,7 +226,7 @@ if (UPNP_BUILD_STATIC)
 		RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 			COMPONENT UPNP_RunTime
 	)
-endif()
+#endif()
 
 install (EXPORT UPNP
 	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/UPNP

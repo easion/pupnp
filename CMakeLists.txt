@@ -14,6 +14,8 @@ if (NOT PUPNP_VERSION_STRING)
     set(PUPNP_VERSION_STRING "17.1.10")
 endif()
 
+set(UPNP_BUILD_STATIC ON)
+
 project (PUPNP VERSION ${PUPNP_VERSION_STRING})
 
 include (GNUInstallDirs)
