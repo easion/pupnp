@@ -247,7 +247,7 @@ endif()
 
 configure_file (${PUPNP_SOURCE_DIR}/upnp/inc/upnpconfig.h.cm ${PUPNP_BINARY_DIR}/upnp/inc/upnpconfig.h)
 configure_file (${PUPNP_SOURCE_DIR}/upnp/sample/common/config_sample.h.cm ${PUPNP_BINARY_DIR}/upnp/sample/common/config_sample.h)
-configure_file (${PUPNP_BINARY_DIR}/autoconfig.h.cm ${PUPNP_BINARY_DIR}/autoconfig.h)
+configure_file (${PUPNP_SOURCE_DIR}/autoconfig.h.cm ${PUPNP_BINARY_DIR}/autoconfig.h)
 
 add_subdirectory (ixml)
 add_subdirectory (upnp)
