@@ -329,13 +329,3 @@ if(FUZZER)
 	add_subdirectory(fuzzer)
 
 endif()
-
-
-install(TARGETS upnp expat ixml uuid
-        ARCHIVE DESTINATION lib
-        LIBRARY DESTINATION lib
-        RUNTIME DESTINATION bin)
-
-install(EXPORT PUPNP-targets
-        NAMESPACE PUPNP::
-        DESTINATION lib/PUPNP)
